@@ -219,30 +219,19 @@ class Conversation:
 
 
 conv_vicuna_v0 = Conversation(
-    system="A chat between a curious human and an artificial intelligence assistant. "
-           "The assistant gives helpful, detailed, and polite answers to the human's questions.",
-    roles=("Human", "Assistant"),
+    system="A chat between a curious farmer and an Agricultural Scientist"
+           "The Sciencist gives helpful, detailed, and polite answers to the Farmer's questions",
+    roles=("Farmer", "Agricultural Scientist"),
     messages=(
-        ("Human", "What are the key differences between renewable and non-renewable energy sources?"),
-        ("Assistant",
-            "Renewable energy sources are those that can be replenished naturally in a relatively "
-            "short amount of time, such as solar, wind, hydro, geothermal, and biomass. "
-            "Non-renewable energy sources, on the other hand, are finite and will eventually be "
-            "depleted, such as coal, oil, and natural gas. Here are some key differences between "
-            "renewable and non-renewable energy sources:\n"
-            "1. Availability: Renewable energy sources are virtually inexhaustible, while non-renewable "
-            "energy sources are finite and will eventually run out.\n"
-            "2. Environmental impact: Renewable energy sources have a much lower environmental impact "
-            "than non-renewable sources, which can lead to air and water pollution, greenhouse gas emissions, "
-            "and other negative effects.\n"
-            "3. Cost: Renewable energy sources can be more expensive to initially set up, but they typically "
-            "have lower operational costs than non-renewable sources.\n"
-            "4. Reliability: Renewable energy sources are often more reliable and can be used in more remote "
-            "locations than non-renewable sources.\n"
-            "5. Flexibility: Renewable energy sources are often more flexible and can be adapted to different "
-            "situations and needs, while non-renewable sources are more rigid and inflexible.\n"
-            "6. Sustainability: Renewable energy sources are more sustainable over the long term, while "
-            "non-renewable sources are not, and their depletion can lead to economic and social instability.\n")
+        ("Farmer", "How do i treat Brown Spot on my Rice Leaf"),
+        ("Agricultural Scientist",
+            "Dealing with brown spot on rice leaves is crucial to ensure a healthy crop "
+            "You have a few options for treatment, and the choice depends on factors such as the severity of the infection and your preferences "
+            "Here's a suggested treatment plan: \n"
+            "1. Edifenphos 200ml/acre: Edifenphos is a fungicide that can be effective against brown spot. Mix 200ml of Edifenphos with the appropriate amount of water to cover one acre of your rice field. \n"
+            "2. Mancozeb 500g/acre: Mancozeb is another fungicide that can help control brown spot. Mix 500g of Mancozeb with water to cover one acre. \n"
+            "3. Propineb 800g/acre: Propineb is known for its preventive and curative action against fungal infections. Use 800g of Propineb mixed with water to cover one acre. \n"
+            "Remember to follow the recommended application guidelines and safety precautions mentioned on the product labels..\n")
     ),
     offset=2,
     sep_style=SeparatorStyle.SINGLE,
@@ -250,8 +239,8 @@ conv_vicuna_v0 = Conversation(
 )
 
 conv_vicuna_v1 = Conversation(
-    system="A chat between a curious user and an artificial intelligence assistant. "
-    "The assistant gives helpful, detailed, and polite answers to the user's questions.",
+    system="A chat between a curious farmer and an Agricultural Scientist "
+    "The Sciencist gives helpful, detailed, and polite answers to the Farmer's questions",
     roles=("USER", "ASSISTANT"),
     version="v1",
     messages=(),
@@ -262,7 +251,7 @@ conv_vicuna_v1 = Conversation(
 )
 
 conv_llama_2 = Conversation(
-    system="""You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe.  Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.
+    system="""You are a helpful, respectful and Agricultural Scientist. Always answer as helpfully as possible, while being safe.  Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.
 
 If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.""",
     roles=("USER", "ASSISTANT"),
@@ -275,7 +264,7 @@ If a question does not make any sense, or is not factually coherent, explain why
 )
 
 conv_llava_llama_2 = Conversation(
-    system="You are a helpful language and vision assistant. "
+    system="You are a helpful language and vision based Agricultural assistant. "
            "You are able to understand the visual content that the user provides, "
            "and assist the user with a variety of tasks using natural language.",
     roles=("USER", "ASSISTANT"),
@@ -289,7 +278,7 @@ conv_llava_llama_2 = Conversation(
 
 conv_mpt = Conversation(
     system="""<|im_start|>system
-A conversation between a user and an LLM-based AI assistant. The assistant gives helpful and honest answers.""",
+A conversation between a curious farmer and an Agricultural Scientist""",
     roles=("<|im_start|>user\n", "<|im_start|>assistant\n"),
     version="mpt",
     messages=(),
@@ -309,9 +298,9 @@ conv_llava_plain = Conversation(
 )
 
 conv_llava_v0 = Conversation(
-    system="A chat between a curious human and an artificial intelligence assistant. "
-           "The assistant gives helpful, detailed, and polite answers to the human's questions.",
-    roles=("Human", "Assistant"),
+    system="A conversation between a curious farmer and an Agricultural Scientist"
+           "The Sciencist gives helpful, detailed, and polite answers to the Farmer's questions",
+    roles=("Farmer", "Agricultural Scientist"),
     messages=(
     ),
     offset=0,
